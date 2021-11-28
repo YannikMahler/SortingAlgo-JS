@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SortingAlgo Visualizer - Home</title>
+
+    <link rel="stylesheet" href="css/complexity.css">
+    <link rel="icon" href="img/icon24.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7d345bbf07.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-light sticky-top">
+        <a class="navbar-brand" href="#"></a>
+        <img src="img/logo.png" alt="" width="300" height="50" class="d-inline-block align-text-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav font-weight-bold">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="complexity.html">Complexity<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div> 
+    </nav>
+    
+    <div class="container-fluid vh-100">
+        <div class="main col bg-secondary">
+            <div class="row">
+                <div class="col-3">
+                </div>
+                <div class="col-6 text-center">
+                    <h1 class="font-weight-bold">Complexity of Sorting Algorithms</h1><br>
+                    <figure class="figure">
+                        <img src="img/complexity/bigO.jpeg" class="figure-img img-fluid" alt="...">
+                        <figcaption class="figure-caption text-light">Big-O Complexity Chart: <a href="https://www.bigocheatsheet.com/">https://www.bigocheatsheet.com/</a> </figcaption>
+                    </figure><br>
+                    <table class="table table-sm table-bordered center-block bg-light">
+                        <caption class="text-light">* not implemented yet</caption>    
+                        <thead>
+                            <tr>
+                            <th scope="col">Algorithm</th>
+                            <th scope="col" colspan="3">Time Complexity</th>
+                            <th scope="col" >Space Complexity</th>
+                            </tr>
+                            <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Best</th>
+                            <th scope="col">Average</th>
+                            <th scope="col">Worst</th>
+                            <th scope="col">Worst</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">Quicksort</th>
+                            <td class="bad">Ω(n log(n))</td>
+                            <td class="bad">Θ(n log(n))</td>
+                            <td class="horrible">Ο(n^2)</td>
+                            <td class="good">Ο(log(n))</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">Bubblesort</th>
+                            <td class="fair">Ω(n)</td>
+                            <td class="horrible">Θ(n^2)</td>
+                            <td class="horrible">Ο(n^2)</td>
+                            <td class="excellent">Ο(1)</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">Insertionsort</th>
+                            <td class="fair">Ω(n)</td>
+                            <td class="horrible">Θ(n^2)</td>
+                            <td class="horrible">Ο(n^2)</td>
+                            <td class="excellent">Ο(1)</td>
+                            </tr>
+                            <th scope="row">Mergesort</th>
+                            <td class="bad">Ω(n log(n))</td>
+                            <td class="bad">Θ(n log(n))</td>
+                            <td class="bad">Ο(n log(n))</td>
+                            <td class="fair">Ο(n)</td>
+                            </tr>
+                            <th scope="row">Selectionsort</th>
+                            <td class="horrible">Ω(n^2)</td>
+                            <td class="horrible">Θ(n^2)</td>
+                            <td class="horrible">Ο(n^2)</td>
+                            <td class="excellent">Ο(1)</td>
+                            </tr>
+                            <th scope="row">Radixsort</th>
+                            <td class="excellent">Ω(nk)</td>
+                            <td class="excellent">Θ(nk)</td>
+                            <td class="excellent">Ο(nk)</td>
+                            <td class="fair">Ο(n+k)</td>
+                            </tr>
+                            <th scope="row">Heapsort*</th>
+                            <td class="bad">Ω(n log(n))</td>
+                            <td class="bad">Θ(n log(n))</td>
+                            <td class="bad">Ο(n log(n))</td>
+                            <td class="excellent">Ο(1)</td>
+                            </tr>
+                            <th scope="row">Shellsort*</th>
+                            <td class="bad">Ω(n log(n))</td>
+                            <td class="horrible">Θ(n (log(n))^2)</td>
+                            <td class="horrible">Ο(n (log(n))^2)</td>
+                            <td class="fair">Ο(1)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer fixed-bottom text-center text-weight-bold bg-primary">
+        Made by Yannik M. 2021
+        <button  class="btn" onclick ="location.href='https://github.com/YannikMahler'">
+            <i class="fab fa-github"></i> 
+        </button>
+    </div>
+    
+</body>
+</html>

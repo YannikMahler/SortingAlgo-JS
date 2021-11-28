@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+.main {
+    margin-bottom: 40px;
+}
+
+.excellent {
+    background-color: #006B3E;
+}
+.good {
+    background-color: #BAC600;
+}
+.fair {
+    background-color: #FFE733;
+}
+.bad {
+    background-color: #FF8C01;
+}
+.horrible {
+    background-color: #ED2938;
+}

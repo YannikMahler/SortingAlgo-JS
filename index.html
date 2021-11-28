@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SortingAlgo Visualizer - Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon24.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7d345bbf07.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <img src="img/logo.png" alt="" width="300" height="50" class="d-inline-block align-text-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav font-weight-bold">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="complexity.html">Complexity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div> 
+    </nav>
+    
+    <div class="container-fluid vh-100">
+        <div class="row gx-2 vh-100">
+            <div class="col-3 bg-secondary ">
+                <p class="h3 font-weight-bold">Settings</p><br>
+                <form class="form-line well gy-5">
+                    <div class="form-group">
+                        <label for="arraySize" class="form-label">Array Size</label>
+                        <input type="range" class="form-range" min="10" max="140" step="1" value="50" id="arraySize">
+                    </div>
+                    <div class="form-group">
+                        <label for="speed" class="form-label">Speed</label>
+                        <input type="range" class="form-range" min="20" max="300" stepdown="10" id="speed">
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="button" class="newArray btn btn-outline-success"  onclick="createNewArray()">Generate new Array</button>
+                    </div>
+                    <div class="form-group top7 text-center">
+                        <button type="button" class="quicksort btn btn-outline-success">Quicksort</button>
+                        <button type="button" class="bubblesort btn btn-outline-danger">Bubblesort</button>
+                        <button type="button" class="mergesort btn btn-outline-info" >Mergesort</button>
+                        <div class="dropdown top7 ">
+                            <button class="btn btn-outline-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</button>
+                            <ul class="moreBtn dropdown-menu dropdown-menu-lg-end">
+                                <li><button class="selectionsort dropdown-item" type="button">Selectionsort</button></li>
+                                <li><button class="insertionsort dropdown-item" type="button">Insertionsort</button></li>
+                                <li><button class="radixsort dropdown-item" type="button">Radixsort</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-9">
+                <div id="bars" class="flexbox">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer fixed-bottom text-center text-weight-bold bg-primary">
+        Made by Yannik M. 2021
+        <button  class="btn" onclick ="location.href='https://github.com/YannikMahler'">
+            <i class="fab fa-github"></i> 
+        </button>
+    </div>
+    <script src="js/app.js"></script> 
+    <script src="js/algo/bubblesort.js"></script> 
+    <script src="js/algo/quicksort.js"></script> 
+    <script src="js/algo/mergesort.js"></script> 
+    <script src="js/algo/selectionsort.js"></script> 
+    <script src="js/algo/insertionsort.js"></script> 
+</body>
+</html>
