@@ -11,10 +11,11 @@ This simple project visualize using Bootstrap 5.1 + JavaScript.
 - Selectionsort
 - Radixsort (WiP)
 
+
+[Check out the site ](https://yannikmahler.github.io/SortingAlgo-JS/)
+
 ## Screenshots
 
-![alt text](.img/md/img1.png)
-
-![alt text](.img/md/img2.png)
-
-![alt text](.img/md/img3.png)
+<img src="img/md/img1.png"> <br/>
+<img src="img/md/img2.png"> <br/>
+<img src="img/md/img3.png"> <br/>
