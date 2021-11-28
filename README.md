@@ -16,6 +16,6 @@ This simple project visualize using Bootstrap 5.1 + JavaScript.
 
 ## Screenshots
 
-<img src="img/md/img1.png"> <br/>
-<img src="img/md/img2.png"> <br/>
-<img src="img/md/img3.png"> <br/>
+<img src="img/md/img1.PNG"> <br/>
+<img src="img/md/img2.PNG"> <br/>
+<img src="img/md/img3.PNG"> <br/>
